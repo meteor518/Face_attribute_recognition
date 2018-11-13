@@ -51,11 +51,11 @@ def main(args):
 #    opt = Adam(lr=1e-4, decay=1e-5)
     
     # read label
-    train_txt = pd.read_csv(args.train_txt)
-    train_label = [i for i in train_txt['lianxing']]
+    train_csv = pd.read_csv(args.train_csv)
+    train_label = [i for i in train_csv['lianxing']]
 
     # read images
-    train_data = pickle.load(open(args.train, 'rb'))
+    train_data = np.load(open(args.train, 'rb'))
     train_data = train_data / 255.0
     train_data = np.transpose(train_data, (0, 3, 1, 2))
     
@@ -65,9 +65,9 @@ def main(args):
     train_label = to_categorical(train_label, num_classes=args.num_classes)
     
     if args.val:
-        val_txt = pd.read_csv(args.val_txt)
-        val_label = [i for i in val_txt['lianxing']]
-        val_data = pickle.load(open(args.val, 'rb'))
+        val_csv = pd.read_csv(args.val_csv)
+        val_label = [i for i in val_csv['lianxing']]
+        val_data = np.load(open(args.val, 'rb'))
         val_data = val_data / 255.0
         val_data = np.transpose(val_data, (0, 3, 1, 2))
         val_label = to_categorical(val_label, num_classes=args.num_classes)
