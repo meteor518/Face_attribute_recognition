@@ -45,5 +45,6 @@ if __name__ == '__main__':
         images.append(image)
         
     np.save(args.out_dir+'images.npy', images)
-    np.save(args.out_dir+'labels.npy', labels)
+    labels = pd.DataFrame(labels, columns=names)
+	labels.to_csv(args.out_dir+'labels.csv', index=False)
     print('Done...')
