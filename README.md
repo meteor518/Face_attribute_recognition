@@ -4,15 +4,15 @@ This project implements classification recognition of face attributes, such as f
 
   The first column is the image name, second is the label. (For example, the face type label: round face 0, square face 1, pointed face 2,  the eyebrow shape label: curved eyebrow 0, flat eyebrow 1, eyebrow 2 and so on).
   
-For example:
+  For example:
 
---face type file:
+  --face type file:
 
-  a.jpg 0
+    a.jpg 0
   
-  b.jpg 1
+    b.jpg 1
   
-  ....
+    ....
 
 * Input and output:
 
