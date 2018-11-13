@@ -1,12 +1,12 @@
 # Face_attribute_recognition
 This project implements classification recognition of face attributes, such as face type or eyebrow shape and so on.
 * The label file format is as follows：\<br>
-  The first column is the `image name`, second is the `label`. (For example, the face type label: round face 0, square face 1, pointed face 2,  the eyebrow shape label: curved eyebrow 0, flat eyebrow 1, eyebrow 2 and so on).
-  >For example:
-  >>face type file:
-  >>>a.jpg 0
-  >>>b.jpg 1 
-  >>>....
+  The first column is the `image name`, second is the `label`. (For example, the face type label: round face 0, square face 1, pointed face 2,  the eyebrow shape label: curved eyebrow 0, flat eyebrow 1, eyebrow 2 and so on).\<br>
+  For example:
+  face type file:\<br>
+  a.jpg 0 \<br>
+  b.jpg 1 \<br>
+  ....
 
 * Input and output:\<br>
   * The `input` of network is: the image after the face detection and alignment (The input size of the pre-model is 224*224).
