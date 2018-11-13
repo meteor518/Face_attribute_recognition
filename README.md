@@ -1,6 +1,6 @@
 # Face_attribute_recognition
 This project implements classification recognition of face attributes, such as face type or eyebrow shape and so on.
-# The label file format is as follows：
+* The label file format is as follows：
 
   The first column is the image name, second is the label. (For example, the face type label: round face 0, square face 1, pointed face 2,  the eyebrow shape label: curved eyebrow 0, flat eyebrow 1, eyebrow 2 and so on).
   
