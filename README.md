@@ -20,9 +20,11 @@ This project implements classification recognition of face attributes, such as f
   * The output is a label file of the attribute, and the project is trained based on the pre-model, and the pre-model frame has VGG-face, resnet50 etc. And there is a download link for the pre-model in the program.
 
 * data_process:
-  * generate_data.py Read the images, save them into .npy file. Use as: python generate_data.py -i ./images/(change yourself path) -l label.txt(change yourself label file) -o ./output/ -r 224
+  * generate_data.py: Read the images, save them into .npy file. 
+  Use as: python generate_data.py -i ./images/(change yourself path) -l label.txt(change yourself label file) -o ./output/ -r 224
 
 * src: the train files
   * metrics.py: Code implementation of various evaluation indicators。
   * models.py: The implementatio of all models' frame.
-  * train.py: The train code. Use as: python train.py -t ./output/train.npy -v ./output/val.npy -tl ./output/train_labels.csv -vl ./output/val_labels.csv -c 3 -batch 128 -o /model_out/
+  * train.py: The train code. 
+  Use as: python train.py -t ./output/train.npy -v ./output/val.npy -tl ./output/train_labels.csv -vl ./output/val_labels.csv -c 3 -batch 128 -o /model_out/
