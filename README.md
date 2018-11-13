@@ -14,10 +14,14 @@ The first column is the `image name`, second is the `label`. (For example, the f
 
 ## data_process:
 * generate_data.py: Read the images, save them into .npy file. \
-`Use as`: python generate_data.py -i ./images/(change yourself path) -l label.txt(change yourself label file) -o ./output/ -r 224
+```shell
+python generate_data.py -i ./images/(change yourself path) -l label.txt(change yourself label file) -o ./output/ -r 224
+```
 
 ## src: the train files
 * metrics.py: Code implementation of various evaluation indicators.
 * models.py: The implementatio of all models' frame.
 * train.py: The train code. \
-`Use as`: python train.py -t ./output/train.npy -v ./output/val.npy -tl ./output/train_labels.csv -vl ./output/val_labels.csv -c 3 -batch 128 -o /model_out/
+```shell
+python train.py -t ./output/train.npy -v ./output/val.npy -tl ./output/train_labels.csv -vl ./output/val_labels.csv -c 3 -batch 128 -o /model_out/
+```
